@@ -5,6 +5,7 @@ import MessageField from '../components/MessageField';
 import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 const Blog = () => {
 
@@ -49,8 +50,22 @@ In today's digital era, encryption plays a crucial role in preserving privacy an
            
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1"/>
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2"/>
+        <Image
+          className="w-full rounded-lg"
+          width={100}
+          height={200}
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png"
+          alt="office content 1"
+        />
+
+        <Image
+            className="mt-4 w-full lg:mt-10 rounded-lg"
+            width={100}
+            height={200}
+            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png"
+            alt="office content 1"
+          />
+            
         </div>
     </div>
 </section>

@@ -28,7 +28,7 @@ const Blog = () => {
               <br>
               </br>
 
-              2. Integrity Verification: Through digital signatures, encryption guarantees the authenticity and integrity of exchanged information. Recipients can verify that messages haven't been tampered with during transit, ensuring their reliability.
+              2. Integrity Verification: Through digital signatures, encryption guarantees the authenticity and integrity of exchanged information. Recipients can verify that messages have not been tampered with during transit, ensuring their reliability.
               <br>
               </br>
               3. Protection Against Mass Surveillance: Encryption empowers individuals to shield their conversations and personal data from unwarranted intrusion, resisting mass surveillance. It preserves the fundamental right to privacy in an increasingly interconnected world.

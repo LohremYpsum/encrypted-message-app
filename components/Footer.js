@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Logo from './Logo';
 import Modal from './Modal';
@@ -6,7 +7,6 @@ import Modal from './Modal';
 const Footer = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     
-
     const openModal = () => {
       setIsModalOpen(true);
     };
@@ -56,14 +56,12 @@ const Footer = () => {
             </Modal>
           </li>
           <li>
-              <a href="/blog" class="mr-4 hover:underline md:mr-6">Blog</a>
+            <Link href="/blog" className="mr-4 hover:underline md:mr-6">Blog</Link>
           </li>
           <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">FAQs</a>
+            <Link href="/#" className="mr-4 hover:underline md:mr-6">FAQs</Link>
           </li>
-          <li>
-              <a href="#" class="mr-4 hover:underline md:mr-6">Contact</a>
-          </li>
+         
       </ul>
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="#" class="hover:underline">Flowbite™</a>. All Rights Reserved.</span>
   </div>

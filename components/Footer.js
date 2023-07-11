@@ -20,7 +20,7 @@ const Footer = () => {
   <div class="mx-auto max-w-screen-xl text-center">
       <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
         <Logo width={50} height={50} src="/images/encryption_logo_transparent.png" />
-        Moe's Encrypter    
+        Moes Encrypter    
       </a>
       <p class="my-6 text-gray-500 dark:text-gray-400">This project is purely a showcase and should not be used for encrypting serious or confidential messages. If you choose to use it and it works, proceed with caution at your own risk. It is not suitable for real-world production software. </p>
       <ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">

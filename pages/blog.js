@@ -20,7 +20,7 @@ const Blog = () => {
       
               Discover the key benefits of encryption in messages, safeguarding privacy, security, and freedom in the digital age.
 
-              In today's digital era, encryption plays a crucial role in preserving privacy and securing our messages. By converting information into an unreadable form, encryption ensures that conversations remain confidential, protecting them from unauthorized access. Let's explore the significant advantages of encryption in messages:
+              In this digital era, encryption plays a crucial role in preserving privacy and securing our messages. By converting information into an unreadable form, encryption ensures that conversations remain confidential, protecting them from unauthorized access. Let us explore the significant advantages of encryption in messages:
 
               <br></br> <br></br>
               1. Privacy Protection: Encryption adds an extra layer of security, safeguarding privacy by preventing unauthorized interception and comprehension of messages. It keeps conversations confidential, inaccessible to prying eyes.

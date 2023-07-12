@@ -68,14 +68,15 @@ const EncryptPage = () => {
       <section className="bg-white dark:bg-gray-900">
         <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-            Contact Us
+            Encrypt Message
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
-            Got a technical issue? Want to send feedback about a beta feature? Need details about
-            our Business plan? Let us know.
+            Fill out the Form below and hit the Encrypt Message Button. This will generate a Token. 
+            <br></br>The Receiver needs all Information of the Inputform aswell as the Token to decrypt the message. 
           </p>
           <form action="#" className="space-y-8">
             <div>
+              
               {inputErrors.firstName && firstName === "" ? (
                 <InputfieldError 
                 inputfield="First Name" 
@@ -137,6 +138,10 @@ const EncryptPage = () => {
             className="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             <Link href="/">Back to Mainpage</Link>
           </button>
+
+
+
+
           {encryptedMessage && <ClipboardCopy text={encryptedMessage} token={encryptedMessage}/> }
         </div>    
       </section>

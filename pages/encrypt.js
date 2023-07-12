@@ -5,6 +5,7 @@ import MessageField from '../components/MessageField';
 import Link from 'next/link';
 import Header from '../components/Header';
 import InputfieldError from '../components/InputFieldError';
+import ClipboardCopy from '../components/ClipboardCopy';
 
 const EncryptPage = () => {
   const [firstName, setFirstName] = useState('');
@@ -90,8 +91,8 @@ const EncryptPage = () => {
             />
           )}
             </div>
-            <div>
 
+            <div>
             {inputErrors.lastName && lastName === "" ? (
               <InputfieldError 
               inputfield="Last Name" 
@@ -105,11 +106,9 @@ const EncryptPage = () => {
               onChange={(e) => setLastName(e.target.value)}
             />
             )}
-
-
             </div>
-            <div>
 
+            <div>
               <InputField
                 label="Email"
                 value={email}
@@ -130,7 +129,7 @@ const EncryptPage = () => {
             </div>
           </form>
           <button
-            className="mt-2 mr-2 text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            className="mt-2 mr-2 mb-2 text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
             onClick={handleEncrypt}
           >
             Encrypt Message
@@ -138,7 +137,10 @@ const EncryptPage = () => {
           <button className="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
             <Link href="/">Back to Mainpage</Link>
           </button>
-          <p>{encryptedMessage}</p>
+
+          <ClipboardCopy text={encryptedMessage} token={encryptedMessage}/>
+
+          
         </div>
 
        {/* <div class="grid items-end gap-6 md:grid-cols-3">

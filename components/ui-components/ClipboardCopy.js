@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-const ClipboardCopy = ({ text, token }) => {
+const ClipboardCopy = ({ clipBoardCopy, token }) => {
   const [showNotification, setShowNotification] = useState(false);
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(clipBoardCopy);
     setShowNotification(true);
     setTimeout(() => {
       setShowNotification(false);

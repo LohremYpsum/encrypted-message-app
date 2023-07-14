@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
+import Header from '../components/page-components/Header';
 import Image from 'next/image';
-import Footer from '../components/Footer';
+import Footer from '../components/page-components/Footer';
 
 const Blog = () => {
 

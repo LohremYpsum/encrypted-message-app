@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import { encryptMessage } from '../utils/encryption';
-import InputField from '../components/InputField';
-import MessageField from '../components/MessageField';
-import Link from 'next/link';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/page-components/Header';
 import Image from 'next/image';
+import Footer from '../components/page-components/Footer';
 
 const Blog = () => {
 
@@ -57,7 +53,6 @@ const Blog = () => {
     </section>
     <Footer />
     </>
-
   );
 };
 

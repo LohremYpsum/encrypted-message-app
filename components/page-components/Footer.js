@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Logo from './Logo';
-import Modal from './Modal';
+import Modal from '../ui-components/Modal';
 
 const Footer = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

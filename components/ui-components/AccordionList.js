@@ -19,8 +19,8 @@ const AccordionList = () => {
   
     return (
       <div>
-        <section class="bg-white dark:bg-gray-900">
-          <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <section className="bg-white dark:bg-gray-900">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           {accordionData.map((accordion, index) => (
                 <Accordion key={index} title={accordion.title} content={accordion.content} />
               ))}

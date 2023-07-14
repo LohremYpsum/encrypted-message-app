@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { encryptMessage } from '../utils/encryption';
-import InputField from '../components/InputField';
-import MessageField from '../components/MessageField';
+import Header from '../components/page-components/Header';
 import Link from 'next/link';
-import Header from '../components/Header';
-import InputfieldError from '../components/InputFieldError';
-import ClipboardCopy from '../components/ClipboardCopy';
+import { encryptMessage } from '../utils/encryption';
+import InputField from '../components/input-components/InputField';
+import MessageField from '../components/input-components/MessageField';
+import InputfieldError from '../components/input-components/InputFieldError';
+import ClipboardCopy from '../components/ui-components/ClipboardCopy';
 
 const EncryptPage = () => {
   const [firstName, setFirstName] = useState('');

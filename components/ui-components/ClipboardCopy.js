@@ -40,7 +40,6 @@ const ClipboardCopy = ({ text, token }) => {
                         </svg>
                         </button>
                         )}
-                    
                     </div>
                 </div>
             </div>
